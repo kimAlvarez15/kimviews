@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KimView | Refreshing Memes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Google Fonts for a modern feel */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #fcfcfc;
+        }
+
+        /* Gradient Hero Section */
+        .hero-section {
+            padding: 120px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .hero-section .lead {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Custom Button styling */
+        .btn-primary {
+            background-color: #ffffff;
+            color: #764ba2;
+            border: none;
+            font-weight: bold;
+            padding: 12px 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #f8f9fa;
+            color: #667eea;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Feature Cards with Humor */
+        .feature-box {
+            transition: all 0.3s ease;
+            border-radius: 15px;
+            border: 1px solid #eee;
+            background: white;
+            padding: 30px;
+            height: 100%;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+        }
+
+        /* Meme Gallery Style */
+        .meme-img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .meme-img:hover {
+            transform: scale(1.03);
+        }
+
+        footer {
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">KimView 😂</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#memes">Memes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Logic</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Kim Simple Website</h1>
+            <p class="lead">"I don't always code, but when I do, I prefer to do it on KimView."</p>
+            <a href="#memes" class="btn btn-primary btn-lg">Show Me the Memes</a>
+        </div>
+    </header>
+
+    <section id="memes" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 font-weight-bold">Daily Dose of Internet</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <img src="https://api.memegen.link/images/doge/wow/such_website/very_bootstrap.png" class="meme-img" alt="Meme 1">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://api.memegen.link/images/buzz/memes/memes_everywhere.png" class="meme-img" alt="Meme 2">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://api.memegen.link/images/fine/this_is/fine.png" class="meme-img" alt="Meme 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <h3>Responsive-ish</h3>
+                        <p>Works on your phone, your tablet, and that smart fridge you never use.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <h3>Fast (Usually)</h3>
+                        <p>Loads faster than your motivation to work on a Monday morning.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <h3>Modern Logic</h3>
+                        <p>90% of the code is just us praying that we didn't forget a semicolon.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2026 <strong>KimAlvarez</strong>. Thank you for browsing! Keep it fresh.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
